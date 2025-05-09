@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import logo from '../assets/logo.png'
 
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
           className="flex items-center gap-3 mb-4"
         >
-          <img src="/logo.png" alt="Logo" className="w-10 h-10" />
+          <img src= {logo} alt="Logo" className="w-10 h-10" />
           <h1 className="text-4xl md:text-5xl font-bold text-[#45f3ff]">
             ARBITRAGE LIVE
           </h1>
