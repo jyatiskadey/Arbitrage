@@ -24,12 +24,12 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <AboutSection />
+      {/* <AboutSection /> */}
       <Advantages />
       <WhyArbitrage />
       <LevelIncome />
       {/* <Features /> */}
-      <TokenInfo />
+      {/* <TokenInfo /> */}
       <Rewards />
       <Levels />
       <DXCToken />
