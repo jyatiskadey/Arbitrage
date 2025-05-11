@@ -1,40 +1,38 @@
-// App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import TokenInfo from "./components/TokenInfo";
-import Levels from "./components/Levels";
-import Rewards from "./components/Rewards";
-import Ecosystem from "./components/Ecosystem";
+// import Ecosystem from "./components/Ecosystem";
 import Footer from "./components/Footer";
-import AboutSection from "./components/AboutSection";
-import Features from "./components/Features";
-import Advantages from "./components/Advantages";
 import WhyArbitrage from "./components/WhyArbitrage";
-import LevelIncome from "./components/LevelIncome";
-import DXCToken from "./components/DXCToken";
+// import DXCToken from "./components/ContactPage";
 
 // Pages
 import LoginPage from "./components/LoginPage";
 import RegisterPage from "./components/RegisterPage";
+import CryptoServices from "./components/Advantages";
+import FaqPage from "./components/FaqPage";
+import ContactPage from "./components/ContactPage";
 
 const Home = () => {
   return (
-    <>
+    <div>
       <Hero />
-      {/* <AboutSection /> */}
-      <Advantages />
-      <WhyArbitrage />
-      <LevelIncome />
-      {/* <Features /> */}
-      {/* <TokenInfo /> */}
-      <Rewards />
-      <Levels />
-      <DXCToken />
-      <Ecosystem />
-    </>
+      <div id="why">
+        <WhyArbitrage />
+      </div>
+      <div id="services">
+        <CryptoServices />
+      </div>
+      <div id="faq">
+        <FaqPage />
+      </div>
+      <div id="contact">
+        <ContactPage />
+      </div>
+      <Footer />
+    </div>
   );
 };
 
@@ -48,7 +46,6 @@ export default function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );
